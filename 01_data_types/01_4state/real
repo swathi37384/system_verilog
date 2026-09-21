@@ -1,0 +1,13 @@
+module test;
+  real a;
+  real b;
+  real result;
+  initial begin
+    a=20.5;
+    b=5;
+    result=a/b;
+    $display("result=%0.2f",result);
+  end
+  
+endmodule
+

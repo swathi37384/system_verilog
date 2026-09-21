@@ -1,1 +1,13 @@
+module test;
+  reg [2:0]a;
+  
+  initial begin
+    a=3'b110;
+    $display("a=%b",a);
+    a=3'bx01;
+    $display("a=%b",a);
+    a=3'bzx1;
+    $display("a=%b",a);
+  end
+endmodule
 

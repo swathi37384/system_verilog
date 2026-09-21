@@ -1,0 +1,10 @@
+module test;
+  wire [3:0]a,b;
+  assign a=4'b1110;
+  assign b=4'b1z0x;
+  initial begin
+    #1;
+    $display("a=%b",a);
+    $display("b=%b",b);
+  end
+endmodule

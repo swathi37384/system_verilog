@@ -1,0 +1,17 @@
+`timescale 1ns/1ps
+module test;
+  time t;
+  realtime r;
+  
+  initial begin
+    #10;
+    t=$time;
+    $display("time=%0t",t);
+    #30;
+    t=$time;
+    $display("time=%0t",t);
+    #20.5;
+    r=$realtime;
+    $display("time=%0t",r);
+  end
+endmodule
