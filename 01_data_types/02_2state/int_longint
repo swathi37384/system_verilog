@@ -1,0 +1,12 @@
+module test;
+    int a;
+    longint b;
+
+    initial begin
+        a = 100000;
+        b = 10000000000;
+        $display("int     = %0d", a);
+        $display("longint = %0d", b);
+    end
+endmodule
+

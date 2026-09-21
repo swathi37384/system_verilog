@@ -1,0 +1,14 @@
+module test;
+
+    byte a;
+    shortint b;
+
+    initial begin
+        a = 100;
+        b = 2000;
+
+        $display("byte     = %0d", a);
+        $display("shortint = %0d", b);
+    end
+
+endmodule

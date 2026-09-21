@@ -1,0 +1,24 @@
+module test;
+    bit             a;
+    byte signed     b;
+    byte unsigned   c;
+    shortint signed d;
+    int unsigned    e;
+    longint signed  f;
+
+    initial begin
+        a = 1'b1;
+        b = -10;
+        c = b;
+        d = 16'hFFFF;
+        e = 32'hFFFFFFFF;
+        f = e;
+        $display("a = %0d", a);
+        $display("b = %0d", b);
+        $display("c = %0d", c);
+        $display("d = %0d", d);
+        $display("e = %0d", e);
+        $display("f = %0d", f);
+    end
+
+endmodule

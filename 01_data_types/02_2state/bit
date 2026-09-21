@@ -1,0 +1,21 @@
+module test;
+  bit a;
+  
+  initial begin
+    a=1'b0;
+    $display("a=%b",a);
+    
+    a=1'b1;
+    $display("a=%b",a);
+    
+    a=1'bx;
+    $display("a=%b",a);
+    
+    a=1'bz;
+    $display("a=%b",a);
+    
+  end
+endmodule
+    
+     
+
